@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Fontawesome CDN Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-box">
+        <h1>Sign Up</h1>
+        <form id="signup-form">
+          <input type="text" name="username" id="username" placeholder="Username" pattern="[a-zA-Z]+" minlength="5" required />
+          <input type="email" name="email" id="email" placeholder="E-mail" pattern="^[a-zA-Z0-9]+@gmail\.com$" />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password" minlength="8"
+            required
+          />
+          <input type="tel" name="phone_number" id=phone_number placeholder="Phone Number" pattern="[0-9]{10}" />
+          <div id="radio">
+            <div>
+              <label for="gender"
+                ><input type="radio" name="gender" value="Male" /> Male</label
+              >
+            </div>
+            <div>
+              <label for="gender"
+                ><input type="radio" name="gender" value="Female" />
+                Female</label
+              >
+            </div>
+          </div>
+
+          <div class="select-container">
+            <div class="select-btn">
+              <span class="btn-text">Select Sports</span>
+              <span class="arrow-dwn">
+                <i class="fa-solid fa-chevron-down"></i>
+              </span>
+            </div>
+
+            <ul class="list-items">
+              <li class="item">
+                <span class="checkbox">
+                  <i class="fa-solid fa-check check-icon"></i>
+                </span>
+                <span class="item-text" value="Badminton">Badminton</span>
+              </li>
+              <li class="item">
+                <span class="checkbox">
+                  <i class="fa-solid fa-check check-icon"></i>
+                </span>
+                <span class="item-text" value="Basketball">Basketball</span>
+              </li>
+              <li class="item">
+                <span class="checkbox">
+                  <i class="fa-solid fa-check check-icon"></i>
+                </span>
+                <span class="item-text">Cricket</span>
+              </li>
+              <li class="item">
+                <span class="checkbox">
+                  <i class="fa-solid fa-check check-icon"></i>
+                </span>
+                <span class="item-text">Football</span>
+              </li>
+              <li class="item">
+                <span class="checkbox">
+                  <i class="fa-solid fa-check check-icon"></i>
+                </span>
+                <span class="item-text">Table Tennis</span>
+              </li>
+            </ul>
+          </div>
+          <button type="submit" id="signup-btn">Sign Up</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
